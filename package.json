@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "name": "vue-sphericalimage",
+  "version": "1.0.0",
+  "author": "112KA",
+  "license": "MIT",
+  "main": "dist/vue-sphericalimage.esm.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build:example": "vue-cli-service build --dest example",
+    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-sphericalimage.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-sphericalimage.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-sphericalimage.min.js"
+  },
+  "dependencies": {
+    "gsap": "^2.1.2",
+    "three": "^0.102.1",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^3.5.1",
+    "node-sass": "^4.11.0",
+    "rollup": "^1.7.0",
+    "rollup-plugin-buble": "^0.19.6",
+    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-vue": "^4.7.2",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "keywords": [
+    "vue",
+    "three.js",
+    "panoramic image",
+    "slide"
+  ]
+}

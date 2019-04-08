@@ -1,4 +1,4 @@
-# ID_DesignCatalog_ShpericalImage
+# vue-sphericalimage
 Vue component - Display, switch, drag operation of 360 panoramic image
 
 ## Example

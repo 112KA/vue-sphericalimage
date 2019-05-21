@@ -30,7 +30,7 @@ npm install vue-sphericalimage
 
 ```js
 import SphericalImage from 'vue-sphericalimage'
-Vue.use(SphericalImage)
+Vue.component('SphericalImage', SphericalImage)
 ```
 
 ## Usage
